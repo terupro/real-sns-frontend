@@ -1,0 +1,17 @@
+{
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "editor.formatOnSave": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "html": "html",
+    "css": "css"
+  },
+  "prettier.arrowParens": "always",
+  "reactSnippets.settings.prettierEnabled": false,
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.useInlineCompletions": true,
+  "emmet.triggerExpansionOnTab": true
+}
