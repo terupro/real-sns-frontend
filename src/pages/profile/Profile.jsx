@@ -1,11 +1,11 @@
-import axios from "axios";
 import { useEffect, useState } from "react";
 import { Rightbar } from "../../components/rightbar/Rightbar";
 import { Sidebar } from "../../components/sidebar/Sidebar";
 import { Timeline } from "../../components/timeline/Timeline";
 import { Topbar } from "../../components/topbar/Topbar";
-import "./Profile.css";
 import { useParams } from "react-router-dom";
+import axios from "axios";
+import "./Profile.css";
 
 const Profile = () => {
   const PUBLIC_FOLDER = process.env.REACT_APP_PUBLIC_FOLDER;
@@ -35,7 +35,9 @@ const Profile = () => {
               />
               <img
                 src={
-                  user.profilePicture || PUBLIC_FOLDER + "/person/noAvatar.png"
+                  user.profilePicture
+                    ? PUBLIC_FOLDER + user.profilePicture
+                    : PUBLIC_FOLDER + "/person/noAvatar.png"
                 }
                 alt=""
                 className="profileUserImg"
